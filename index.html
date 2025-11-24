@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Your Name</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Hi, I'm</p>
+        <h1 class="hero__title">Your Name</h1>
+        <p class="hero__subtitle">
+          Front-end developer with a passion for creating elegant, user-first digital
+          experiences.
+        </p>
+        <div class="hero__cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn--ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero__photo" aria-hidden="true"></div>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <div class="section__header">
+          <p class="eyebrow">About</p>
+          <h2>Who I am</h2>
+        </div>
+        <p class="section__text">
+          Replace this paragraph with a concise description of yourself. Keep it focused on
+          the value you bring: your expertise, what drives you, and the types of problems you
+          enjoy solving.
+        </p>
+      </section>
+
+      <section id="experience" class="section section--accent">
+        <div class="section__header">
+          <p class="eyebrow">Experience</p>
+          <h2>Where I've worked</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item">
+            <div>
+              <h3>Senior Developer &mdash; Company A</h3>
+              <p class="timeline__meta">2022 &ndash; Present</p>
+            </div>
+            <p>
+              Summarize your impact: key metrics, technologies, and notable accomplishments.
+            </p>
+          </article>
+          <article class="timeline__item">
+            <div>
+              <h3>Software Engineer &mdash; Company B</h3>
+              <p class="timeline__meta">2020 &ndash; 2022</p>
+            </div>
+            <p>
+              Highlight how you improved processes, shipped features, or led initiatives.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section__header">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected work</h2>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>Project One</h3>
+            <p>
+              Briefly describe the problem, your solution, and the tech stack. Link to live
+              demo or repo below.
+            </p>
+            <div class="card__links">
+              <a href="#" aria-label="Project One live demo">Live</a>
+              <a href="#" aria-label="Project One source code">Code</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Project Two</h3>
+            <p>
+              Mention outcomes or metrics if possible. Keep descriptions concise and focused.
+            </p>
+            <div class="card__links">
+              <a href="#">Live</a>
+              <a href="#">Code</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Project Three</h3>
+            <p>
+              You can add more cards as needed. Maintain consistent formatting for clarity.
+            </p>
+            <div class="card__links">
+              <a href="#">Live</a>
+              <a href="#">Code</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section section--accent">
+        <div class="section__header">
+          <p class="eyebrow">Education</p>
+          <h2>Learning journey</h2>
+        </div>
+        <ul class="education">
+          <li>
+            <h3>B.Sc. Computer Science &mdash; University Name</h3>
+            <p class="timeline__meta">2016 &ndash; 2020</p>
+            <p>Relevant coursework, honors, or extracurricular highlights.</p>
+          </li>
+          <li>
+            <h3>Certificates &mdash; Platform / Organization</h3>
+            <p class="timeline__meta">Year</p>
+            <p>List notable certifications or bootcamps that reinforce your skills.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section__header">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's work together</h2>
+        </div>
+        <form class="contact" id="contactForm">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Jane Doe" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="jane@email.com" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="How can I help?" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send Message</button>
+          <p class="contact__status" id="contactStatus" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
